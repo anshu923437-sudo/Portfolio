@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshu Kumari — Computer Science & Creative Interface Designer</title>
+    <meta name="description"
+        content="Personal portfolio of Anshu Kumari — Computer Science & Designing undergraduate at SVIET Chandigarh. Building modern web experiences, algorithms, and thoughtful user interfaces.">
+
+    <!-- Google Fonts: Playfair Display for ANSHU KUMARI, Syne & Plus Jakarta Sans for bright editorial design -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <!-- Top Reading Progress -->
+    <div id="scroll-progress" class="scroll-progress-line" aria-hidden="true"></div>
+
+    <!--================ NAVIGATION =================-->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo" aria-label="Anshu Kumari Homepage">
+                <span class="logo-name">Anshu Kumari</span>
+                <span class="logo-badge">CS & Design</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu"
+                aria-expanded="false">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-item active">Home</a></li>
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#projects" class="nav-item">Work</a></li>
+                    <li><a href="#skills" class="nav-item">Skills</a></li>
+                    <li><a href="#education" class="nav-item">Education</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="https://1drv.ms/b/c/6fbdc1cec8d3b12a/IQDV_QYx5hDGQbS_mRCusgAdAbJrKC9usT96sFJPbziSVYw?e=xewhM3"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                        <span>Resume</span>
+                        <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!--================ HERO SECTION =================-->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-accent" aria-hidden="true"></div>
+            <div class="section-container hero-grid">
+                <!-- Left: Headline & Bio -->
+                <div class="hero-text-content">
+                    <div class="hero-pill-badge">
+                        <span class="pulse-indicator"></span>
+                        <span>Open for Internships & Collaborations</span>
+                    </div>
+
+                    <!-- Prominent ANSHU KUMARI with dedicated signature typography -->
+                    <h1 class="hero-name-display">ANSHU KUMARI</h1>
+
+                    <h2 class="hero-headline">
+                        Designing Code.<br>
+                        <span class="highlight-text">Coding Design.</span>
+                    </h2>
+
+                    <p class="hero-subheading">
+                        Hi, I'm <strong>Anshu Kumari</strong> — a Computer Science & Designing undergraduate at
+                        <strong>Swami Vivekananda Institute of Technology (SVIET Chandigarh)</strong>. I blend algorithmic
+                        thinking with visual design to create fast, human-centric, and delightful web applications.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="hero-btn-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Selected Work</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="https://1drv.ms/b/c/6fbdc1cec8d3b12a/IQDV_QYx5hDGQbS_mRCusgAdAbJrKC9usT96sFJPbziSVYw?e=xewhM3"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span>Download CV</span>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            <span>Say Hello</span>
+                        </a>
+                    </div>
+
+                    <!-- Highlights Strip -->
+                    <div class="hero-highlights">
+                        <div class="highlight-chip chip-yellow">
+                            <span class="chip-emoji">🎓</span>
+                            <span>B.Tech CS & Design '29</span>
+                        </div>
+                        <div class="highlight-chip chip-blue">
+                            <span class="chip-emoji">⚡</span>
+                            <span>C++, Python & JS</span>
+                        </div>
+                        <div class="highlight-chip chip-orange">
+                            <span class="chip-emoji">🎨</span>
+                            <span>HTML & CSS Layouts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Creative Visual Showcase Card -->
+                <div class="hero-visual-showcase">
+                    <div class="creative-portrait-card">
+                        <div class="card-bg-shape" aria-hidden="true"></div>
+                        <div class="portrait-wrapper">
+                            <img src="myimage.jpeg" alt="Anshu Kumari" class="portrait-img">
+                        </div>
+
+                        <!-- Floating Creative Stickers -->
+                        <div class="floating-sticker sticker-top">
+                            <span class="sticker-icon">✨</span>
+                            <div class="sticker-text">
+                                <span class="sticker-main">Art & Logic</span>
+                                <span class="sticker-sub">Dual Perspective</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-sticker sticker-bottom">
+                            <span class="sticker-icon">📍</span>
+                            <div class="sticker-text">
+                                <span class="sticker-main">SVIET Chandigarh</span>
+                                <span class="sticker-sub">Undergraduate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================ ABOUT SECTION =================-->
+        <section id="about" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-kicker">01 // ABOUT ME</span>
+                    <h2 class="section-title">The Story Behind the Screen</h2>
+                    <p class="section-description">
+                        Where technical software engineering meets creative visual storytelling.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Bio Text -->
+                    <div class="about-card-main">
+                        <h3 class="about-subtitle">Building with curiosity and intentional craft</h3>
+                        <p class="about-paragraph">
+                            I am an undergraduate student in <strong>Computer Science & Designing</strong> at
+                            <strong>Swami Vivekananda Institute of Technology (SVIET Chandigarh)</strong>. My passion
+                            lives in the dialogue between <strong>engineering logic</strong> (how things work under the
+                            hood) and <strong>visual aesthetics</strong> (how things feel when you use them).
+                        </p>
+                        <p class="about-paragraph">
+                            Whether writing algorithms in C++, crafting responsive frontends with semantic HTML and CSS,
+                            or exploring Python, I focus on clarity, accessibility, and clean architecture.
+                        </p>
+
+                        <div class="values-row">
+                            <div class="value-item">
+                                <div class="value-number">01</div>
+                                <h4 class="value-title">Clean Code</h4>
+                                <p class="value-desc">Maintainable, standard-compliant implementations without
+                                    unnecessary bloat.</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-number">02</div>
+                                <h4 class="value-title">Thoughtful UX</h4>
+                                <p class="value-desc">Accessible typography, comfortable contrast, and micro-interactions
+                                    that make users smile.</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-number">03</div>
+                                <h4 class="value-title">Continuous Growth</h4>
+                                <p class="value-desc">Always exploring new tools, diving into algorithms, and building
+                                    hands-on projects.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Snapshot Sidebar -->
+                    <div class="about-sidebar-card">
+                        <h3 class="sidebar-title">Quick Snapshot</h3>
+                        <ul class="snapshot-list">
+                            <li>
+                                <span class="snap-label">Degree</span>
+                                <span class="snap-val">B.Tech CS & Designing</span>
+                            </li>
+                            <li>
+                                <span class="snap-label">Institution</span>
+                                <span class="snap-val">SVIET Chandigarh</span>
+                            </li>
+                            <li>
+                                <span class="snap-label">Graduation</span>
+                                <span class="snap-val">Class of 2029</span>
+                            </li>
+                            <li>
+                                <span class="snap-label">Core Interests</span>
+                                <span class="snap-val">C++, Python, HTML & CSS</span>
+                            </li>
+                            <li>
+                                <span class="snap-label">Status</span>
+                                <span class="snap-badge">Seeking 2025/2026 Internships</span>
+                            </li>
+                        </ul>
+
+                        <div class="sidebar-cta">
+                            <a href="#contact" class="btn btn-primary btn-full">
+                                <span>Get in Touch</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================ PROJECTS SECTION =================-->
+        <section id="projects" class="section section-warm">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-kicker">02 // SELECTED WORK</span>
+                    <h2 class="section-title">Featured Projects & Case Studies</h2>
+                    <p class="section-description">
+                        A showcase of engineering and design projects built with clean code and high visual care.
+                    </p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="filter-wrapper">
+                    <button class="filter-tab active" data-filter="all">All Projects</button>
+                    <button class="filter-tab" data-filter="web">Web Development</button>
+                    <button class="filter-tab" data-filter="algorithms">Algorithms</button>
+                    <button class="filter-tab" data-filter="python">Python</button>
+                </div>
+
+                <!-- Projects Gallery -->
+                <div class="projects-gallery">
+                    <!-- Project 1 -->
+                    <article class="project-card card-blue" data-category="web">
+                        <div class="card-tag-row">
+                            <span class="project-pill pill-blue">Web Development • HTML & CSS</span>
+                            <div class="project-links">
+                                <a href="https://github.com/anshu923437-sudo" target="_blank"
+                                    rel="noopener noreferrer" class="link-circle" title="View Source on GitHub">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                                <a href="#hero" class="link-circle" title="View Live Demo">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="card-title">Interactive Portfolio & Design Showcase</h3>
+                        <p class="card-summary">
+                            A bright, editorial personal brand portfolio engineered with clean semantic HTML5 and modern
+                            CSS3. Features responsive fluid layouts, scroll spy, and high-contrast typography.
+                        </p>
+
+                        <div class="tech-stack-row">
+                            <span class="tech-badge">Semantic HTML5</span>
+                            <span class="tech-badge">CSS3 Custom Props</span>
+                            <span class="tech-badge">Responsive Layout</span>
+                            <span class="tech-badge">Vanilla JS</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card card-orange" data-category="algorithms web">
+                        <div class="card-tag-row">
+                            <span class="project-pill pill-orange">Algorithms • Canvas & Logic</span>
+                            <div class="project-links">
+                                <a href="https://github.com/anshu923437-sudo" target="_blank"
+                                    rel="noopener noreferrer" class="link-circle" title="View Source on GitHub">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="card-title">Sorting & Complexity Visualizer</h3>
+                        <p class="card-summary">
+                            An interactive web tool animating sorting algorithms (Bubble Sort, Selection Sort, Merge
+                            Sort) in real time. Designed to clarify time and space complexity visually.
+                        </p>
+
+                        <div class="tech-stack-row">
+                            <span class="tech-badge">HTML5 Canvas</span>
+                            <span class="tech-badge">CSS3 Styling</span>
+                            <span class="tech-badge">Data Structures</span>
+                            <span class="tech-badge">Algorithms</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card card-purple" data-category="python">
+                        <div class="card-tag-row">
+                            <span class="project-pill pill-purple">Python • Text Processing</span>
+                            <div class="project-links">
+                                <a href="https://github.com/anshu923437-sudo" target="_blank"
+                                    rel="noopener noreferrer" class="link-circle" title="View Source on GitHub">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="card-title">InsightLearn — Academic Study Assistant</h3>
+                        <p class="card-summary">
+                            A Python-based utility that processes lengthy lecture documents and research notes,
+                            extracting key thematic terms and generating structured revision cheat sheets with local file
+                            indexing.
+                        </p>
+
+                        <div class="tech-stack-row">
+                            <span class="tech-badge">Python 3</span>
+                            <span class="tech-badge">File I/O</span>
+                            <span class="tech-badge">Text Processing</span>
+                            <span class="tech-badge">CLI Tool</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card card-green" data-category="web">
+                        <div class="card-tag-row">
+                            <span class="project-pill pill-green">Modern CSS • Layouts</span>
+                            <div class="project-links">
+                                <a href="https://github.com/anshu923437-sudo" target="_blank"
+                                    rel="noopener noreferrer" class="link-circle" title="View Source on GitHub">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="card-title">Aura Web Components & Layout Spec</h3>
+                        <p class="card-summary">
+                            A modular frontend design system built purely in modern HTML and CSS. Prioritizes WCAG
+                            AAA contrast, fluid CSS grids, flexbox alignment, and consistent typographic rhythm.
+                        </p>
+
+                        <div class="tech-stack-row">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3 Flexbox</span>
+                            <span class="tech-badge">CSS Grid</span>
+                            <span class="tech-badge">Responsive Design</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--================ SKILLS SECTION =================-->
+        <section id="skills" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-kicker">03 // TOOLKIT</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-description">
+                        The languages and foundational tools I use to build clean, functional software.
+                    </p>
+                </div>
+
+                <div class="skills-card-grid">
+                    <!-- Programming -->
+                    <div class="skill-category-card">
+                        <div class="cat-icon-box box-blue">💻</div>
+                        <h3 class="cat-heading">Programming</h3>
+                        <p class="cat-sub">Core languages for software logic & problem solving.</p>
+                        <div class="badge-cluster">
+                            <span class="skill-pill">C++ (DSA & STL)</span>
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">JavaScript (ES6+)</span>
+                        </div>
+                    </div>
+
+                    <!-- Web & UI/UX -->
+                    <div class="skill-category-card">
+                        <div class="cat-icon-box box-orange">🎨</div>
+                        <h3 class="cat-heading">Web & UI/UX</h3>
+                        <p class="cat-sub">Building clean, responsive, accessible web layouts.</p>
+                        <div class="badge-cluster">
+                            <span class="skill-pill">Semantic HTML5</span>
+                            <span class="skill-pill">Modern CSS3</span>
+                            <span class="skill-pill">CSS Flexbox & Grid</span>
+                            <span class="skill-pill">Responsive Design</span>
+                        </div>
+                    </div>
+
+                    <!-- Computer Science -->
+                    <div class="skill-category-card">
+                        <div class="cat-icon-box box-yellow">🧠</div>
+                        <h3 class="cat-heading">Computer Science</h3>
+                        <p class="cat-sub">Academic foundation in algorithms & logic.</p>
+                        <div class="badge-cluster">
+                            <span class="skill-pill">Data Structures</span>
+                            <span class="skill-pill">Algorithm Complexity</span>
+                            <span class="skill-pill">OOP Principles</span>
+                            <span class="skill-pill">Problem Solving</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Workflow -->
+                    <div class="skill-category-card">
+                        <div class="cat-icon-box box-green">🛠️</div>
+                        <h3 class="cat-heading">Tools & Workflow</h3>
+                        <p class="cat-sub">Essential developer utilities for code creation.</p>
+                        <div class="badge-cluster">
+                            <span class="skill-pill">Git</span>
+                            <span class="skill-pill">GitHub</span>
+                            <span class="skill-pill">VS Code</span>
+                            <span class="skill-pill">Chrome DevTools</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================ EDUCATION SECTION =================-->
+        <section id="education" class="section section-warm">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-kicker">04 // ACADEMICS</span>
+                    <h2 class="section-title">Education & Milestones</h2>
+                    <p class="section-description">
+                        Formal undergraduate education in computer science and technology.
+                    </p>
+                </div>
+
+                <div class="education-card-main">
+                    <div class="edu-top-meta">
+                        <span class="edu-timeline-pill">2025 — 2029 (Undergraduate)</span>
+                        <span class="edu-status-pill">Currently Enrolled</span>
+                    </div>
+
+                    <h3 class="edu-school">Swami Vivekananda Institute of Technology</h3>
+                    <h4 class="edu-program">Bachelor of Technology (B.Tech) in Computer Science & Designing</h4>
+                    <p class="edu-location">SVIET Chandigarh, India</p>
+
+                    <p class="edu-narrative">
+                        Enrolled in an engineering curriculum focusing on core computing fundamentals, software
+                        development methodology, programming in C++ and Python, and web design with HTML & CSS.
+                    </p>
+
+                    <div class="coursework-container">
+                        <span class="coursework-heading">Relevant Key Coursework:</span>
+                        <div class="chips-flex">
+                            <span class="chip-bubble">Data Structures & Algorithms</span>
+                            <span class="chip-bubble">Object-Oriented Programming (OOP)</span>
+                            <span class="chip-bubble">Programming in C++</span>
+                            <span class="chip-bubble">Python Programming</span>
+                            <span class="chip-bubble">Web Foundations (HTML & CSS)</span>
+                            <span class="chip-bubble">Digital Logic Design</span>
+                            <span class="chip-bubble">Discrete Mathematics</span>
+                            <span class="chip-bubble">Problem Solving & Logic Building</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================ CONTACT SECTION =================-->
+        <section id="contact" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-kicker">05 // REACH OUT</span>
+                    <h2 class="section-title">Let's Build Something Great</h2>
+                    <p class="section-description">
+                        Have an internship opportunity, project collaboration, or question? Send a note!
+                    </p>
+                </div>
+
+                <div class="contact-layout">
+                    <!-- Left: Direct Channels -->
+                    <div class="contact-cards-column">
+                        <!-- Email Card -->
+                        <div class="channel-card">
+                            <div class="channel-icon-wrap icon-blue">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="channel-text">
+                                <span class="channel-label">Direct Email</span>
+                                <a href="mailto:anshu923437@gmail.com" class="channel-link">anshu923437@gmail.com</a>
+                            </div>
+                            <button id="copy-email-btn" class="btn-copy-chip" title="Copy email address">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
+
+                        <!-- LinkedIn Card -->
+                        <div class="channel-card">
+                            <div class="channel-icon-wrap icon-orange">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </div>
+                            <div class="channel-text">
+                                <span class="channel-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/anshu-kumari-54693337a" target="_blank"
+                                    rel="noopener noreferrer" class="channel-link">linkedin.com/in/anshu-kumari</a>
+                            </div>
+                            <a href="https://www.linkedin.com/in/anshu-kumari-54693337a" target="_blank"
+                                rel="noopener noreferrer" class="link-circle" title="Open LinkedIn profile">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- GitHub Card -->
+                        <div class="channel-card">
+                            <div class="channel-icon-wrap icon-purple">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                            </div>
+                            <div class="channel-text">
+                                <span class="channel-label">GitHub</span>
+                                <a href="https://github.com/anshu923437-sudo" target="_blank"
+                                    rel="noopener noreferrer" class="channel-link">github.com/anshu923437-sudo</a>
+                            </div>
+                            <a href="https://github.com/anshu923437-sudo" target="_blank" rel="noopener noreferrer"
+                                class="link-circle" title="Open GitHub profile">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Message Form -->
+                    <div class="contact-form-card">
+                        <h3 class="form-title">Send a Quick Message</h3>
+                        <p class="form-description">Leave a note and I'll get back to you promptly.</p>
+
+                        <form id="contact-form" class="clean-form">
+                            <div class="form-row">
+                                <div class="form-control">
+                                    <label for="sender-name">Your Name</label>
+                                    <input type="text" id="sender-name" name="name" placeholder="Alex Morgan" required>
+                                </div>
+                                <div class="form-control">
+                                    <label for="sender-email">Your Email</label>
+                                    <input type="email" id="sender-email" name="email" placeholder="alex@example.com"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-control">
+                                <label for="sender-subject">Subject</label>
+                                <input type="text" id="sender-subject" name="subject"
+                                    placeholder="Internship / Project Idea" required>
+                            </div>
+
+                            <div class="form-control">
+                                <label for="sender-message">Message</label>
+                                <textarea id="sender-message" name="message" rows="4"
+                                    placeholder="Tell me a bit about your project or opportunity..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full" id="submit-form-btn">
+                                <span>Send Message</span>
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+
+                        <div id="form-feedback" class="form-feedback-alert" aria-live="polite"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--================ FOOTER =================-->
+    <footer class="site-footer">
+        <div class="section-container footer-flex">
+            <div class="footer-left">
+                <span class="footer-brand">Anshu Kumari</span>
+                <p class="footer-copy">
+                    Computer Science & Designing undergraduate building thoughtful web products at SVIET Chandigarh.
+                </p>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="section-container footer-sub-row">
+            <p>© 2026 Anshu Kumari. Designed with passion & built with semantic code.</p>
+            <div class="footer-badge">
+                <span class="dot-green"></span>
+                <span>Open for Opportunities</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Return to top of page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Custom Client Script -->
+    <script src="jscript.js"></script>
+</body>
+
+</html>

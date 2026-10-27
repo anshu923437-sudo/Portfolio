@@ -1,0 +1,13 @@
+section{
+    padding:0ch;
+    background-color: beige;
+    border-radius: 10px;
+    border-color:brown ;
+    scrollbar-highlight-color: rgb(214, 37, 37);
+    text-align:left;
+}
+
+section h2{
+    color: black;
+    
+}   
